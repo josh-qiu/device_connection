@@ -50,7 +50,7 @@ extension HostService: MCNearbyServiceBrowserDelegate {
         print("\(peerID) device found")
         print("info: ", info)
         discoveredDevices.append(peerID)
-//        browser.invitePeer(peerID, to: session, withContext: nil, timeout: 30) //can we just add to discovered/connected devices, and then invite once they select it?
+        browser.invitePeer(peerID, to: session, withContext: nil, timeout: 30) //can we just add to discovered/connected devices, and then invite once they select it?
         
     }
     
@@ -124,6 +124,6 @@ extension HostService: QCPRDeviceViewDelegate {
     func requestConnect(device: BLEDevice) {
         //bleCore.requestConnect(device: device)
         print("mcpeerid: ", device.toMPID(bled: device))
-        browser.invitePeer(device.toMPID(bled: device), to: session, withContext: nil, timeout: 30)
+//        browser.invitePeer(device.toMPID(bled: device), to: session, withContext: nil, timeout: 30)
     }
 }

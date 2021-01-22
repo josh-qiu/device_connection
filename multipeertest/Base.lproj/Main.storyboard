@@ -79,6 +79,56 @@
                     <view key="view" contentMode="scaleToFill" id="6PC-cw-mgY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yZ-FJ-y83">
+                                <rect key="frame" x="54" y="258" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Connect BVM"/>
+                                <connections>
+                                    <action selector="didSelectButt_BVM:" destination="S5c-xF-HPL" eventType="touchUpInside" id="28B-PM-n6u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xa-Ec-ys2">
+                                <rect key="frame" x="54" y="296" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Connect Stethoscope"/>
+                                <connections>
+                                    <action selector="didSelectButt_Steth:" destination="S5c-xF-HPL" eventType="touchUpInside" id="KbS-7C-rgg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F9-SZ-04z">
+                                <rect key="frame" x="54" y="334" width="178" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Connect Drugs and Fluids"/>
+                                <connections>
+                                    <action selector="didSelectButt_DF:" destination="S5c-xF-HPL" eventType="touchUpInside" id="LXl-ME-ql1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ri-KG-yF0">
+                                <rect key="frame" x="56" y="372" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Connect Monitor Box"/>
+                                <connections>
+                                    <action selector="didSelectButt_MonitorBox:" destination="S5c-xF-HPL" eventType="touchUpInside" id="Ouh-Xf-3Jx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcP-q2-PKe">
+                                <rect key="frame" x="56" y="410" width="202" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Connect Bedside Diagnostics"/>
+                                <connections>
+                                    <action selector="didSelectButt_BedsideDiagnostics:" destination="S5c-xF-HPL" eventType="touchUpInside" id="E8p-ER-CJG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXh-cm-a2d">
+                                <rect key="frame" x="54" y="220" width="191" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show all connected devices"/>
+                                <connections>
+                                    <action selector="didSelectButt_ViewAll:" destination="S5c-xF-HPL" eventType="touchUpInside" id="iAw-Md-PKD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="neT-wG-KpM"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>

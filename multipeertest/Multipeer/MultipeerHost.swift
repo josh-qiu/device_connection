@@ -17,6 +17,7 @@ class HostService: NSObject {
     var connectedDevices: [MCPeerID] = []
     var myPeerID = MCPeerID(displayName: "host")
     var service = "trumonitor-ctrl"
+    //dictionary of mcpeerid --> phone id's?
     
     override init() {
         
@@ -48,7 +49,7 @@ extension HostService: MCNearbyServiceBrowserDelegate {
         
         print("\(peerID) device found")
         discoveredDevices.append(peerID)
-        browser.invitePeer(peerID, to: session, withContext: nil, timeout: 30)
+        browser.invitePeer(peerID, to: session, withContext: nil, timeout: 30) //can we just add to discovered/connected devices, and then invite once they select it?
         
     }
     
@@ -107,4 +108,11 @@ extension HostService: MCSessionDelegate {
     }
     
     
+}
+extension HostService: QCPRDeviceViewDelegate {
+
+    func requestConnect(device: BLEDevice) {
+        //bleCore.requestConnect(device: device)
+        browser.invitePeer(device.toMPID(bled: device), to: session, withContext: nil, timeout: 30)
+    }
 }

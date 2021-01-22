@@ -26,7 +26,7 @@ class AdvertisingService: NSObject {
         
         super.init()
         session = MCSession(peer: myPeerID, securityIdentity: nil, encryptionPreference: .optional)
-        advertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: ["hello":"Nadine"], serviceType: service)
+        advertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: ["hello":"nadine"], serviceType: service)
         
         session.delegate = self
         advertiser.delegate = self
@@ -86,7 +86,9 @@ extension AdvertisingService: MCSessionDelegate {
             break
         case .connected:
             print("-- \(peerID) Connected -- ")
-            host = peerID
+            if host == nil{
+                host = peerID
+            }
         @unknown default:
             break
         }

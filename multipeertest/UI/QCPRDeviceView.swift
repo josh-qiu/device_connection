@@ -149,12 +149,10 @@ class QCPRDeviceView: UIViewController, UIAdaptivePresentationControllerDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print("FLAGFLAG")
         let device = devices[indexPath.row]
         if device == connectedDevice {
 //            delegate?.requestDisconnect(device: device)
         } else {
-            print("FLAGFLAGFLAG")
             delegate?.requestConnect(device: device)
         }
     }

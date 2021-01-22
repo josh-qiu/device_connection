@@ -16,21 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e8-Fi-8dc">
-                                <rect key="frame" x="49" y="299" width="91.999999999999886" height="35.999999999999986"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Simulator">
-                                    <color key="titleColor" systemColor="systemOrangeColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="rWc-Kq-Jy3" kind="show" id="RxB-nw-h1s"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUG-Lv-3t0">
-                                <rect key="frame" x="231" y="299" width="84.000000000000114" height="36.000000000000142"/>
+                                <rect key="frame" x="122" y="496" width="172" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Manager">
                                     <color key="titleColor" systemColor="systemTealColor"/>
@@ -38,6 +27,17 @@
                                 <connections>
                                     <action selector="managerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qsE-2c-BnR"/>
                                     <segue destination="S5c-xF-HPL" kind="show" id="GJ6-pL-kxs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e8-Fi-8dc">
+                                <rect key="frame" x="118" y="257" width="188" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <state key="normal" title="Simulator">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rWc-Kq-Jy3" kind="show" id="RxB-nw-h1s"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -136,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hqw-TB-j0j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1730" y="68"/>
+            <point key="canvasLocation" x="2203" y="402"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="utu-It-8ze">
@@ -165,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cej-3W-S2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="383" y="-1294"/>
+            <point key="canvasLocation" x="4645" y="-283"/>
         </scene>
         <!--Steth View Controller-->
         <scene sceneID="m4z-vS-qIi">
@@ -194,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IyC-Jb-roH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051" y="-1294"/>
+            <point key="canvasLocation" x="3861" y="-657"/>
         </scene>
         <!--Bedside View Controller-->
         <scene sceneID="4r7-rx-h23">
@@ -230,7 +230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHp-hM-d80" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1729" y="-1294"/>
+            <point key="canvasLocation" x="2997" y="227"/>
         </scene>
         <!--Simulator View Controller-->
         <scene sceneID="yY6-Gv-WfU">
@@ -298,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nq1-Tg-9AL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051" y="-635"/>
+            <point key="canvasLocation" x="2203" y="-283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ddv-az-no4">
@@ -327,7 +327,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fS4-bh-kOh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1729" y="-635"/>
+            <point key="canvasLocation" x="2997" y="-810"/>
         </scene>
         <!--Monitor View Controller-->
         <scene sceneID="1Fe-jQ-MYV">
@@ -357,7 +357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mXM-bg-20E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="383" y="-635"/>
+            <point key="canvasLocation" x="3861" y="85"/>
         </scene>
     </scenes>
     <resources>

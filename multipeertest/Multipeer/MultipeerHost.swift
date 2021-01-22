@@ -57,12 +57,16 @@ extension HostService: MCNearbyServiceBrowserDelegate {
     func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
         
         print("\(peerID) device lost")
-        discoveredDevices.remove(at: discoveredDevices.firstIndex(of: peerID)!)
+        print(discoveredDevices)
         
-        guard let index = connectedDevices.firstIndex(of: peerID) else { return }
+        guard let index = discoveredDevices.firstIndex(of: peerID) else { return }
+        
+        discoveredDevices.remove(at: index)
+        
+        guard let index2 = connectedDevices.firstIndex(of: peerID) else { return }
         
         
-        connectedDevices.remove(at: index)
+        connectedDevices.remove(at: index2)
     }
     
 }
@@ -119,7 +123,7 @@ extension HostService: QCPRDeviceViewDelegate {
 
     func requestConnect(device: BLEDevice) {
         //bleCore.requestConnect(device: device)
-        print("FLAGFLAGFLAGFLAG", device.toMPID(bled: device))
-//        browser.invitePeer(device.toMPID(bled: device), to: session, withContext: nil, timeout: 30)
+        print("mcpeerid: ", device.toMPID(bled: device))
+        browser.invitePeer(device.toMPID(bled: device), to: session, withContext: nil, timeout: 30)
     }
 }

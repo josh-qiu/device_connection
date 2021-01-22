@@ -9,7 +9,7 @@ import UIKit
 
 class BVMViewController: UIViewController {
 
-    let service = AdvertisingService(type: "BMV")
+    let service = AdvertisingService(type: "BVM")
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -36,7 +36,7 @@ class ManagerViewController: UIViewController, UITableViewDelegate{
     
     @IBAction func didSelectButt_ViewAll(_ sender: Any) {
         showDevicesList() //could j pass in parameter:'vpm' to only show vpm's
-        let new_BLEDevices = conv_MCPeerIDList_to_BLEDeviceList(peeridLi: service.connectedDevices)
+        let new_BLEDevices = conv_MCPeerIDList_to_BLEDeviceList(peeridLi: service.discoveredDevices)
         print("new BLEDevices about to show: ", new_BLEDevices)
         deviceView?.update(devices: new_BLEDevices)
     }
@@ -75,6 +75,7 @@ class ManagerViewController: UIViewController, UITableViewDelegate{
 //        if deviceView == nil {
         print("inside showing devices, will show deviceview next")
         deviceView = QCPRDeviceView.show()
+        deviceView!.delegate = service
 //            deviceView?.delegate = self
 //        }
     }

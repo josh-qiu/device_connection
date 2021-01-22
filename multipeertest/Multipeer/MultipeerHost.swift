@@ -123,7 +123,7 @@ extension HostService: QCPRDeviceViewDelegate {
 
     func requestConnect(device: BLEDevice) {
         //bleCore.requestConnect(device: device)
-        print("inviting: ", device.toMPID(bled: device))
-        browser.invitePeer(device.toMPID(bled: device), to: session, withContext: nil, timeout: 30)
+        print("inviting: ", device.peerID)
+        browser.invitePeer(device.peerID!, to: session, withContext: nil, timeout: 30)
     }
 }

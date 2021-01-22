@@ -12,7 +12,8 @@ import MultipeerConnectivity
 struct BLEDevice: Equatable {
     var uuid: String //phone's id
     var deviceName: String //peerID instead
-    
+    var peerID: MCPeerID?
+
     func toMPID(bled: BLEDevice) -> MCPeerID{ //in the end, we gotta pick either mcpeerid or bledevice but we goin like dis fo now
         //let mcpid = MCPeerID(displayName: bled.deviceName)
         return MCPeerID(displayName: bled.deviceName) //mcpid

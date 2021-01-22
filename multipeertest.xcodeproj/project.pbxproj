@@ -400,7 +400,11 @@
 					"@executable_path/Frameworks",
 				);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 				PRODUCT_BUNDLE_IDENTIFIER = com.laerdal.multipeerTestApp;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = com.laerdal.whateverYouWantItToBe;
+>>>>>>> Stashed changes
 =======
 				PRODUCT_BUNDLE_IDENTIFIER = com.laerdal.whateverYouWantItToBe;
 >>>>>>> Stashed changes
@@ -426,7 +430,11 @@
 					"@executable_path/Frameworks",
 				);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 				PRODUCT_BUNDLE_IDENTIFIER = com.laerdal.multipeerTestApp;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = com.laerdal.whateverYouWantItToBe;
+>>>>>>> Stashed changes
 =======
 				PRODUCT_BUNDLE_IDENTIFIER = com.laerdal.whateverYouWantItToBe;
 >>>>>>> Stashed changes

@@ -26,7 +26,7 @@ class AdvertisingService: NSObject {
         
         super.init()
         session = MCSession(peer: myPeerID, securityIdentity: nil, encryptionPreference: .optional)
-        advertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: [:], serviceType: service)
+        advertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: ["hello":"Nadine"], serviceType: service)
         
         session.delegate = self
         advertiser.delegate = self

@@ -26,7 +26,7 @@ class AdvertisingService: NSObject {
         
         super.init()
         session = MCSession(peer: myPeerID, securityIdentity: nil, encryptionPreference: .optional)
-        advertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: ["hello":"nadine"], serviceType: service)
+        advertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: ["device_name": UIDevice.current.name, "device_id": UIDevice.current.identifierForVendor!.uuidString], serviceType: service)
         
         session.delegate = self
         advertiser.delegate = self
@@ -40,6 +40,23 @@ class AdvertisingService: NSObject {
         advertiser.startAdvertisingPeer()
         
     }
+    
+    func send(data: Data){
+        
+        do{
+            
+            if host != nil {
+                try session.send(data, toPeers: [host], with: .reliable)
+            }
+ 
+        }catch let error {
+            
+            print("%@", "Error for sending: \(error)")
+            
+        }
+        
+    }
+    
     
     func signal() {
         

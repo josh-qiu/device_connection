@@ -107,6 +107,18 @@ class ManagerViewController: UIViewController, UITableViewDelegate{
         }
         return mcpeerid_to_bledevice
     }
+    
+  
+    @IBOutlet weak var slider: UISlider!
+//    @IBAction func slider(_ sender: Any) {
+//
+//        var data = Data(bytes: [])
+//
+//
+//        service.
+//
+//    }
+    
 //    public func refreshDevicesListState() {
 //        deviceView?.update(searching: bleCore.isScanning(), bluetoothOn: bleCore.bluetoothOn())
 //    }

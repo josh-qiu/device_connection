@@ -146,11 +146,21 @@
                                     <action selector="didSelectButt_ViewAll:" destination="S5c-xF-HPL" eventType="touchUpInside" id="iAw-Md-PKD"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qZr-jJ-7z7">
+                                <rect key="frame" x="141" y="493" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slider:" destination="S5c-xF-HPL" eventType="valueChanged" id="Avu-Ph-wtz"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="neT-wG-KpM"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="XT8-kD-VoC"/>
+                    <connections>
+                        <outlet property="slider" destination="qZr-jJ-7z7" id="MTh-DH-mIw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hqw-TB-j0j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

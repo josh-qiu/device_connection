@@ -12,7 +12,8 @@ import MultipeerConnectivity
 struct BLEDevice: Equatable {
     var uuid: String //phone's id
     var deviceName: String //peerID instead
-    
+    var peerID: MCPeerID?
+
     func toMPID(bled: BLEDevice) -> MCPeerID{ //in the end, we gotta pick either mcpeerid or bledevice but we goin like dis fo now
         //let mcpid = MCPeerID(displayName: bled.deviceName)
         return MCPeerID(displayName: bled.deviceName) //mcpid
@@ -149,12 +150,10 @@ class QCPRDeviceView: UIViewController, UIAdaptivePresentationControllerDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print("FLAGFLAG")
         let device = devices[indexPath.row]
         if device == connectedDevice {
 //            delegate?.requestDisconnect(device: device)
         } else {
-            print("FLAGFLAGFLAG")
             delegate?.requestConnect(device: device)
         }
     }

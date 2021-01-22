@@ -101,8 +101,8 @@ class ManagerViewController: UIViewController, UITableViewDelegate{
         var mcpeerid_to_bledevice: [BLEDevice] = []
         for ele in peeridLi{
 //            if (ele.displayName == filter){
-                mcpeerid_to_bledevice.append(BLEDevice(uuid: "device's ID", deviceName: ele.displayName))
-                print("1 ele", ele.displayName) //ele["DisplayName"]
+            mcpeerid_to_bledevice.append(BLEDevice(uuid: "device's ID", deviceName: ele.displayName, peerID: ele))
+                print("1 ele", ele) //ele["DisplayName"]
 //            }
         }
         return mcpeerid_to_bledevice
